@@ -17,7 +17,14 @@ const Header: React.FC = () => {
   return (
    <header className="fixed top-0 left-0 w-full bg-white dark:bg-[#111] shadow-md z-50  backdrop-blur-md bg-transparent bg-white/150">
   <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-    <h1 className="text-xl font-bold">RameshP</h1>
+      <div className="flex items-center gap-2">
+          <img
+            src="src/assets/Rpsvg.jpg" // Ensure this is a public path or use import if inside src
+            alt="Logo"
+            className="w-7 h-7 rounded-full shadow-md object-cover"
+          />
+          <h1 className="text-xl font-bold">RameshP</h1>
+        </div>
     <nav className="flex gap-4 text-sm items-center">
       <Link to="hero" smooth duration={500} className="cursor-pointer hover:text-blue-500">Home</Link>
       <Link to="about" smooth duration={500} className="cursor-pointer hover:text-blue-500">About</Link>

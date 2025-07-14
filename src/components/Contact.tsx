@@ -95,13 +95,13 @@ function Contact() {
         {/* Social Links */}
         <div className="flex justify-center gap-6 mt-10 text-2xl">
           <a
-            href="mailto:ramesh@example.com"
+            href="mailto:rameshpotaliya87@gmail.com"
             className="text-gray-600 dark:text-gray-300 hover:text-blue-600"
           >
             <FaEnvelope />
           </a>
           <a
-            href="https://github.com/your-username"
+            href="https://github.com/Ramesh087"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-600 dark:text-gray-300 hover:text-blue-600"
@@ -109,7 +109,7 @@ function Contact() {
             <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/in/your-username"
+            href="https://www.linkedin.com/in/ramesh-potaliya-572166229"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-600 dark:text-gray-300 hover:text-blue-600"
