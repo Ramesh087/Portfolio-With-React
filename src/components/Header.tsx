@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll"; 
-// At the top of the file
+
 import logoImg from '/Rpsvg.jpg'; // Adjust path if needed
 
-// In the component's return statement
 
 const Header: React.FC = () => {
     const [darkMode, setDarkMode] = useState<boolean>(() => {
@@ -25,7 +24,7 @@ const Header: React.FC = () => {
   <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
       <div className="flex items-center gap-2">
          <img
-         src={logoImg} // Use the imported variable here
+         src={logoImg}
          alt="Logo"
          className="w-7 h-7 rounded-full shadow-md object-cover"
         />
