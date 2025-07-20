@@ -18,8 +18,6 @@ const Hero: React.FC = () => {
           </h1>
           <p className="text-gray-700 dark:text-gray-300 text-lg md:text-xl mb-6">
             I’m Ramesh, a developer working with JavaScript, React, TypeScript, and Next.js to create high-performance, user-friendly web applications with clean, scalable code.
-
-
           </p>
           <Link
             to="contact"
@@ -34,12 +32,12 @@ const Hero: React.FC = () => {
         {/* Profile image */}
         <div className="flex-1 flex justify-center md:justify-end">
           <img
-            // Ensure the image path is correct
             src={profileImg}
             alt="Ramesh Potaliya"
             className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-full shadow-lg"
           />
         </div>
+        
       </div>
     </section>
   );

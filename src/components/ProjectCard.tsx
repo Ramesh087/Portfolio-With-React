@@ -19,7 +19,7 @@ const ProjectCard: React.FC<Projects> = ({ title, description, image, github, de
           rel="noopener noreferrer"
           className="text-blue-600 dark:text-blue-400 hover:underline"
         >
-          🔗 Live
+          🔗 Live 
         </a>
         <a
           href={github}

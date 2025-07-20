@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-scroll"; // Ensure you have react-scroll installed
+import { Link } from "react-scroll"; 
 const Header: React.FC = () => {
     const [darkMode, setDarkMode] = useState<boolean>(() => {
     return localStorage.getItem("theme") === "dark";
-  });
+  });//typescript
 
   useEffect(() => {
     if (darkMode) {
@@ -14,12 +14,13 @@ const Header: React.FC = () => {
       localStorage.setItem("theme", "light");
     }
   }, [darkMode]);
+
   return (
    <header className="fixed top-0 left-0 w-full bg-white dark:bg-[#111] shadow-md z-50  backdrop-blur-md bg-transparent bg-white/150">
   <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
       <div className="flex items-center gap-2">
           <img
-            src="src/assets/Rpsvg.jpg" // Ensure this is a public path or use import if inside src
+            src="src/assets/Rpsvg.jpg" // Adjust the path as necessary
             alt="Logo"
             className="w-7 h-7 rounded-full shadow-md object-cover"
           />

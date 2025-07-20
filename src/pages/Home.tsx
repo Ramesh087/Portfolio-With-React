@@ -1,5 +1,4 @@
 import React from 'react';
-// Make sure the Header component exists at the specified path, or update the path if necessary
 import Header from '../components/Header.tsx';
 import Hero from '../components/Hero.tsx';
 import About from '../components/About.tsx';

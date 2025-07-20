@@ -1,13 +1,14 @@
 import React from "react";
 
 const About: React.FC = () => {
+  
   const skills = [
     { name: "JavaScript", level: 90 },
     { name: "React", level: 85 },
     { name: "TypeScript", level: 80 },
     { name: "Next.js", level: 75 },
     { name: "Tailwind CSS", level: 85 },
-  ];
+  ];//manual levels, adjust as needed
 
   return (
     <section

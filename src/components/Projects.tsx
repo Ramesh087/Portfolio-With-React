@@ -14,6 +14,7 @@ const Projects: React.FC = () => {
   const [repos, setRepos] = useState<GitHubRepo[]>([]);
   const [showAll, setShowAll] = useState(false);
 
+  // Define project images and pinned repos
   const projectImages: Record<string, string> = {
   "portfolio-with-react": "src/assets/images/portfolio-with-react.png",
   "todo-list": "src/assets/images/todo.png",
@@ -24,6 +25,7 @@ const Projects: React.FC = () => {
   "portfolio-website": "src/assets/images/portfolio1.png",
   "video-hosting-website-backend": "",
 };
+
   const pinnedRepos = [
     "portfolio-with-react",
     "todo-list",

@@ -1,12 +1,11 @@
 const Projects = [
   {
-    title: "Weather App",
-    description: "Built with React and OpenWeather API.",
-    image: "/assets/images/weather.png",
-    github: "https://github.com/username/weather-app",
-    demo: "https://weather-app.vercel.app",
+    title: "Portfolio Website",
+    description: "A personal portfolio built with React and Tailwind CSS.",
+    image: "/assets/images/portfolio-with-react.png",
+    github: "https://github.com/Ramesh087/portfolio",
+    demo: "https://portfolio.vercel.app",
   },
-  // Add more projects
 ];
 
 export default Projects;

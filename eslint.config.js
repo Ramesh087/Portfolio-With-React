@@ -21,3 +21,36 @@ export default tseslint.config([
     },
   },
 ])
+
+
+// For developing a production-ready application
+
+// import reactX from 'eslint-plugin-react-x';
+// import reactDom from 'eslint-plugin-react-dom';
+// export default tseslint.config([
+//   { ignores: ['dist'] },
+//   {
+//     files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'],
+//     languageOptions: {
+//       globals: { ...globals.browser, ...globals.node }
+//     },
+//   },
+//   {
+//     files: ['**/*.{ts,tsx}'],
+//     extends: [
+//       // Base configs
+//       ...tseslint.configs.recommendedTypeChecked,
+//       ...tseslint.configs.stylisticTypeChecked,
+//       // React-specific configs
+//       reactX.configs['recommended-typescript'],
+//       reactDom.configs.recommended,
+//     ],
+//     languageOptions: {
+//       parserOptions: {
+//         project: ['./tsconfig.node.json', './tsconfig.app.json'],
+//         tsconfigRootDir: import.meta.dirname,
+//       },
+//     },
+//   },
+// ]); 
+//  
