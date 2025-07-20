@@ -1,5 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll"; 
+// At the top of the file
+import logoImg from '/Rpsvg.jpg'; // Adjust path if needed
+
+// In the component's return statement
+
 const Header: React.FC = () => {
     const [darkMode, setDarkMode] = useState<boolean>(() => {
     return localStorage.getItem("theme") === "dark";
@@ -19,11 +24,11 @@ const Header: React.FC = () => {
    <header className="fixed top-0 left-0 w-full bg-white dark:bg-[#111] shadow-md z-50  backdrop-blur-md bg-transparent bg-white/150">
   <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
       <div className="flex items-center gap-2">
-          <img
-            src="src/assets/Rpsvg.jpg" // Adjust the path as necessary
-            alt="Logo"
-            className="w-7 h-7 rounded-full shadow-md object-cover"
-          />
+         <img
+         src={logoImg} // Use the imported variable here
+         alt="Logo"
+         className="w-7 h-7 rounded-full shadow-md object-cover"
+        />
           <h1 className="text-xl font-bold">RameshP</h1>
         </div>
     <nav className="flex gap-4 text-sm items-center">

@@ -2,6 +2,15 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import ProjectCard from "./ProjectCard";
 
+import portfolioReactImg from '../assets/images/portfolio-with-react.png';
+import todoImg from '../assets/images/todo.png';
+import xoxoImg from '../assets/images/XOXO.png';
+import qrcodeImg from '../assets/images/qrcode.png';
+import calculatorImg from '../assets/images/calculator.png';
+import portfolio1Img from '../assets/images/portfolio1.png';
+import defaultImg from '../assets/default.webp'; // A default fallback image
+
+
 interface GitHubRepo {
   id: number;
   name: string;
@@ -15,17 +24,18 @@ const Projects: React.FC = () => {
   const [showAll, setShowAll] = useState(false);
 
   // Define project images and pinned repos
-  const projectImages: Record<string, string> = {
-  "portfolio-with-react": "src/assets/images/portfolio-with-react.png",
-  "todo-list": "src/assets/images/todo.png",
-  "typing-tester": "",
-  "tic-tac-toe": "src/assets/images/XOXO.png",
-  "qr-code-generator": "src/assets/images/qrcode.png",
-  "calculator-app": "src/assets/images/calculator.png",
-  "portfolio-website": "src/assets/images/portfolio1.png",
-  "video-hosting-website-backend": "",
+  
+const projectImages: Record<string, string> = {
+  "portfolio-with-react": portfolioReactImg,
+  "todo-list": todoImg,
+  "tic-tac-toe": xoxoImg,
+  "qr-code-generator": qrcodeImg,
+  "calculator-app": calculatorImg,
+  "portfolio-website": portfolio1Img,
+
 };
 
+// Define the pinned repositories
   const pinnedRepos = [
     "portfolio-with-react",
     "todo-list",
@@ -73,16 +83,13 @@ const Projects: React.FC = () => {
         <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {displayedRepos.map((repo) => (
             <ProjectCard
-              key={repo.id}
-              title={repo.name}
-              description={
-                repo.description ||
-                "A hands-on project built to practice and apply real-world web development skills."
-              }
-              image={projectImages[repo.name.toLowerCase()] || "src/assets/default.webp"}
-              github={repo.html_url}
-              demo={repo.homepage || repo.html_url}
-            />
+             key={repo.id}
+             title={repo.name}
+             description={repo.description || "A hands-on project built to practice and apply real-world web development skills."}
+             image={projectImages[repo.name.toLowerCase()] || defaultImg} // Use the imported images
+             github={repo.html_url}
+             demo={repo.homepage || repo.html_url}
+             />
           ))}
         </div>
 
