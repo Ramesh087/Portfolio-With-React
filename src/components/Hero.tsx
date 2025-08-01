@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
-import profileImg from "/src/assets/potaliya-removebg-preview.png"; // Replace with your image path
+import profileImg from "/src/assets/potaliya-removebg-preview.jpg"; // Replace with your image path
 
 const Hero: React.FC = () => {
   return (
