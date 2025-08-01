@@ -14,7 +14,7 @@ This is a modern, single-page personal portfolio website built with React, TypeS
 
 ## 🚀 Live Demo
 
-[**view the live version of the portfolio here.**](https://your-live-demo-link.com)
+[**view the live version of the portfolio here.**](https://portf0lio8.netlify.app/)
 
 ## 🛠️ Technologies Used
 
